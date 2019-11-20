@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/start/jquery-ui.min.css" integrity="sha256-+ApWgB/rWRVeGReiOzUVXkPXIzzigIdWWsHQSnmadE4=" crossorigin="anonymous" /> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Location Details</title>
+  </head>
+  <body>
+    <div class="container bg-secondary">
+
+      <h1 class="text-primary mb-5">Registration Dates</h1>
+
+      <label for="startDate" class="h3 white"> Starting Date </label>
+      <input type="text" id="startDate" name="startDate" class="mr-5">
+
+      <label for="endDate" class="h3 white"> Ending Date </label>
+      <input type="text" id="endDate" name="endDate">
+
+      <br/>
+      <input type="button" name="submit" class="my-5 btn btn-lg btn-primary"  id="submit1" value="Submit">
+      <br/>
+
+      <label for="noDays" class="h3 white mb-5"> Number of Days </label>
+      <input type="text" id="noDays" name="noDays">
+
+      <h1 class="text-primary mb-5">My Choice Locations</h1>
+      
+      <div id="userInput">
+        <label for="place" class="h3 white"> Place</label>
+        <select class="form-control" id="place">
+           <option value="Wellington">Wellington</option>
+           <option value="Auckland">Auckland</option>
+           <option value="Christchurch">Christchurch</option>
+           <option value="Dunedin">Dunedin</option>
+        </select>
+
+       <label for="duration" class="h3 white mt-5"> Duration</label>
+       <select class="form-control" id="duration">
+          <option value="10">less than 10 min</option>
+          <option value="20">less than 20 min</option>
+          <option value="50">less than 50 min</option>
+          <option value="100">less than 100 min</option>
+
+        </select>
+
+    <!--  <button id="submit" type="button" class="btn btn-lg btn-primary my-5"> Submit </button>
+    </div>
+ -->
+    <button id="details" class="btn btn-lg btn-primary my-5" id="details" type="button" name="button">Show details</button>
+    <div id="map"> </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+       <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM=" crossorigin="anonymous"></script> --> 
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="js/config.json"></script>
+    <script src="js/script.js"> </script>
+  </body>
+</html>
